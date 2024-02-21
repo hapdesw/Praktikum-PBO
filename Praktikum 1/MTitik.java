@@ -1,30 +1,37 @@
-public class MTitik{
-  public static void main(String[] args){
-    Titik t1;
-    Titik t2;
-
-    t1 = new Titik();
-    t2 = new Titik();
-
-    t1.setAbsis(10);
-    t1.setOrdinat(8);
-    t2.setAbsis(4);
-    t2.setOrdinat(6);
-
-    float counterTitik;
+public class Titik{
     float absis;
     float ordinat;
+    static float counterTitik;
 
-    counterTitik = Titik.getCounterTitik();
-    System.out.println("Jumlah objek titik: " + counterTitik);
+    Titik(){
+        absis = 0;
+        ordinat = 0;
+        counterTitik++;
+    }
 
-    absis = t1.getAbsis();
-    ordinat = t1.getOrdinat();
-    System.out.printf("t1(%.1f, %.1f)\n", absis, ordinat);
+    Titik(float a, float o){
+        absis = a;
+        ordinat = o;
+        counterTitik++;
+    }
 
-    absis = t2.getAbsis();
-    ordinat = t2.getOrdinat();
-    System.out.printf("t2(%.1f, %.1f)\n", absis, ordinat);
+    void setAbsis(float a){
+        absis = a;
+    }
 
-  }
+    void setOrdinat(float o){
+        ordinat = o;
+    }
+
+    float getAbsis(){
+        return absis;
+    }
+
+    float getOrdinat(){
+        return ordinat;
+    }
+
+    static float getCounterTitik(){
+        return counterTitik;
+    }
 }
