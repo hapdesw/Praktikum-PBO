@@ -1,4 +1,4 @@
-# Praktikum-PBO
+# Praktikum Pemrograman Berorientasi Objek
 
 Lab C1
 
