@@ -23,11 +23,11 @@ public class Main {
         M2.cetak();
 
         WM3 = new WaliMahasiswa("Frank Longbottom", "-", "Rumah Longbottom");
-        M2 = new Mahasiswa("Neville Longbottom", "24680", "Agroekoteknologi", WM3);
+        M3 = new Mahasiswa("Neville Longbottom", "24680", "Agroekoteknologi", WM3);
         System.out.println();
-        System.out.println("Jurusan dari mahasiswa bernama " + M2.getNama() + " dengan NIM " + M2.getNim() + " adalah " + M2.getJurusan());
-        System.out.println("Wali mahasiswa dari " + M2.getNama() + " adalah " + M2.getWali().getNama() + " dengan nomor HP " + M2.getWali().getNomorHp() + " dan beralamatkan di " + M2.getWali().getAlamat());
+        System.out.println("Jurusan dari mahasiswa bernama " + M3.getNama() + " dengan NIM " + M3.getNim() + " adalah " + M3.getJurusan());
+        System.out.println("Wali mahasiswa dari " + M3.getNama() + " adalah " + M3.getWali().getNama() + " dengan nomor HP " + M3.getWali().getNomorHp() + " dan beralamatkan di " + M3.getWali().getAlamat());
         WM3.setNomorHp("08789");
-        System.out.println("Wali mahasiswa dari " + M2.getNama() + " adalah " + M2.getWali().getNama() + " dengan nomor HP " + M2.getWali().getNomorHp() + " dan beralamatkan di " + M2.getWali().getAlamat());
+        System.out.println("Wali mahasiswa dari " + M3.getNama() + " adalah " + M3.getWali().getNama() + " dengan nomor HP " + M3.getWali().getNomorHp() + " dan beralamatkan di " + M3.getWali().getAlamat());
     }
 }
