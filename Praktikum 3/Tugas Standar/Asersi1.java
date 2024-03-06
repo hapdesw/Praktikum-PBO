@@ -1,7 +1,7 @@
 // Nama: Happy Desita W.        
 // NIM: 24060122120023
 // Tanggal: 6 Maret 2024
-// Deskripsi: Kelas yang berisi program untuk menunjukkan asersi
+// Deskripsi: Program untuk menunjukkan asersi
 
 public class Asersi1{
     public static void main(String[] args){
