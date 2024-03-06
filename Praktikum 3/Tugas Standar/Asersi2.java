@@ -2,7 +2,7 @@
 // NIM: 24060122120023
 // Tanggal: 6 Maret 2024
 // Deskripsi: Program untuk demo asersi yang akan menolak
-//              input jaari-jari lingkaran yang bernilai nol
+//              input jari-jari lingkaran yang bernilai nol
 
 class Lingkaran {
     private double jariJari;
