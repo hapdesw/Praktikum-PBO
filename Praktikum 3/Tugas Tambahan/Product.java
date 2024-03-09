@@ -34,8 +34,7 @@ public class Product {
 
     public void setName(String name) {
         if (name.equals("")){
-            assert (!name.equals("")): "Terdapat kesalahan";
-            System.out.println("Nama produk tidak boleh kosong");
+            assert (!name.equals("")): "Terdapat kesalahan. Nama produk tidak boleh kosong";
         } 
         else{
             this.name = name;
@@ -44,8 +43,7 @@ public class Product {
 
     public void setStock(int stock) {
         if (stock < 0){
-            assert (stock >= 0): "Terjadi kesalahan";
-            System.out.println(("Jumlah stock tidak boleh bilangan negatif"));
+            assert (stock >= 0): "Terdapat kesalahan. Jumlah stock tidak boleh bilangan negatif";
         }
         else{
             this.stock = stock;
@@ -54,8 +52,7 @@ public class Product {
 
     public void setPrice(int price) {
         if (price <= 0){
-            assert (price > 0): "Terjadi kesalahan";
-            System.out.println(("Harga produk harus bilangan positif"));
+            assert (price > 0): "Terdapatkesalahan. Harga produk harus bilangan positif";
         }
         else{
             this.price = price;
@@ -64,13 +61,11 @@ public class Product {
 
     public void purchaseProduct(int quantity) {
         if (quantity <= 0){
-            assert (quantity > 0): "Terjadi kesalahan";
-            System.out.println(("Quantity barang yang dibeli harus bilangan positif"));
+            assert (quantity > 0): "Terjadi kesalahan. Quantity barang yang dibeli harus bilangan positif";
         }
         else{
             if (getStock() < quantity){
-                assert (getStock() >= quantity): "Terjadi kesalahan";
-                System.out.println(("Stok produk yang tersedia tidak mencukupi"));
+                assert (getStock() >= quantity): "Terjadi kesalahan. Stok produk yang tersedia tidak mencukupi";
             }
             else{
                 this.stock = this.stock - quantity;
@@ -80,12 +75,10 @@ public class Product {
 
     public void addStock(int quantity) {
         if (quantity <= 0){
-            assert (quantity > 0): "Terjadi kesalahan";
-            System.out.println(("Quantity barang harus bilangan positif"));
+            assert (quantity > 0): "Terjadi kesalahan. Quantity barang harus bilangan positif";
         }
         else{
             this.stock = this.stock + quantity;
         }
     }
-
 }
